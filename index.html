@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="plugin-style.css">
+    <link rel="stylesheet" type="text/css" href="base-style.css">
+    <script>
+      function doSlide() {
+        $( '#volunteer-opp-message.success' ).slideDown();
+        console.log('I tried to slide');
+      }
+    </script>
+    </head>
+  <body>
+    <div class="volunteer-opp-message success">I should be hidden, and am an example of the problem.</div>
+    <div id="volunteer-opp-message" class="volunteer-opp-message">
+      <div class="success">I am hidden, but I should appear when you click the button</div>
+    </div>
+    <button onclick="doSlide()">Slide It</button>
+  </body>
+</html>
